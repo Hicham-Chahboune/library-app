@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_etud"
+    app:startDestination="@id/menu_booksEtudiant">
+
+    <activity
+        android:id="@+id/majorEtud"
+        android:name="com.example.ttss.MajorEtud"
+        android:label="activity_major_etud"
+        tools:layout="@layout/activity_major_etud" />
+    <fragment
+        android:id="@+id/menu_searchEtudiant"
+        android:name="com.example.ttss.user.SearchEtud"
+        android:label="fragment_search_etud"
+        tools:layout="@layout/fragment_search_etud" />
+    <fragment
+        android:id="@+id/menu_booksEtudiant"
+        android:name="com.example.ttss.user.BooksEtud"
+        android:label="fragment_books_etud"
+        tools:layout="@layout/fragment_books_etud" />
+    <fragment
+        android:id="@+id/menu_favoriteEtudiant"
+        android:name="com.example.ttss.user.FavoriteEtud"
+        android:label="fragment_favorite_etud"
+        tools:layout="@layout/fragment_favorite_etud" />
+</navigation>

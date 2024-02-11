@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EILCO library</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="reservation_actions">
+        <item>Confirm reservation</item>
+        <item>Confirm taken</item>
+        <item>Confirm return</item>
+    </string-array>
+    <string-array name="roles">
+        <item>ETUDIANT</item>
+        <item>PROFESSOR</item>
+    </string-array>
+</resources>

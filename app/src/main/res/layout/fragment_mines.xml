@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8ebf0"
+    tools:context=".Major">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generatePdf"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:listitem="@layout/row_reservation_user" />
+
+    <EditText
+        android:id="@+id/searchetudient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Nom ou prenom"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/generatePdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="genererPdf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchetudient" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#5f52ac"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5f52ac">
+
+        <ImageView
+            android:id="@+id/rvimage"
+            android:layout_width="170dp"
+            android:layout_height="169dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:foregroundGravity="fill"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/rvtxtTitle"
+            android:layout_width="171dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:shadowColor="#BAB5B5"
+            android:text="TextView"
+            android:textColor="#E6E6E6"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rvtxtAuteur"
+            android:layout_width="175dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="TextView"
+            android:textColor="#E6E6E6"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvtxtTitle" />
+
+        <TextView
+            android:id="@+id/rvtxtPage"
+            android:layout_width="177dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#E6E6E6"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvtxtAuteur" />
+
+        <ImageView
+            android:id="@+id/valider"
+            android:layout_width="49dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toStartOf="@+id/rejeter"
+            app:layout_constraintTop_toBottomOf="@+id/rvtxtPage"
+            app:srcCompat="@drawable/ic_baseline_check_24" />
+
+        <ImageView
+            android:id="@+id/rejeter"
+            android:layout_width="68dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvtxtPage"
+            app:srcCompat="@drawable/ic_twotone_close_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

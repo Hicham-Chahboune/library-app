@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookEdit">
+
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="263dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="ChooseImageAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/nb_pages"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="nombre page"
+        android:inputType="number|textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_auteur" />
+
+    <EditText
+        android:id="@+id/nb_description"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:hint="nombre page"
+        android:inputType="number|textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nb_pages" />
+
+    <EditText
+        android:id="@+id/ed_title"
+        android:layout_width="280dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_book" />
+
+    <EditText
+        android:id="@+id/ed_auteur"
+        android:layout_width="278dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="author"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

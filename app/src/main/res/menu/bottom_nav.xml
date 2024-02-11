@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_books"
+        android:title="Book"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        />
+    <item android:id="@+id/menu_favorite"
+        android:title="favorite"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_favorite_24"/>
+
+    <item android:id="@+id/menu_reservations"
+        android:title="reservation"
+        android:enabled="true"
+
+        android:icon="@drawable/ic_baseline_person_24"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/menu_mine"
+        android:title="Not returned"
+        android:enabled="true"
+
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_admin_panel_settings_24"/>
+</menu>
